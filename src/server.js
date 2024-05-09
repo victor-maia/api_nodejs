@@ -17,5 +17,11 @@ app.get("/message/:num/:user/:age", (request, response) => {
 
 });
 
+app.get("/users", (request, response) => {
+    const {page, limit} = request.query
+
+    response.send(`Página, ${page}. Mostrar: ${limit}`)
+})
+
 app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
 
