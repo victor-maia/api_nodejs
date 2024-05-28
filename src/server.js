@@ -31,5 +31,5 @@ app.use((error, request, response, next ) => {
         message: "Internal Server Error"
     })
 })
-const PORT = 3000
+const PORT = 3333
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`))
